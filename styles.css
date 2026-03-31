@@ -1,0 +1,136 @@
+/* Styles pour VaultBoxR - Conditions Générales d'Utilisation et Politique de Confidentialité */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #667eea;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #764ba2;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-left: 5px solid #667eea;
+    padding-left: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1em;
+}
+
+strong {
+    color: #764ba2;
+    font-weight: 600;
+}
+
+ol {
+    counter-reset: section;
+    list-style: none;
+    padding-left: 0;
+}
+
+ol li {
+    counter-increment: section;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 5px solid #667eea;
+    border-radius: 5px;
+    position: relative;
+}
+
+ol li::before {
+    content: counter(section) ".";
+    position: absolute;
+    left: -25px;
+    top: 15px;
+    font-weight: bold;
+    color: #667eea;
+    font-size: 1.2em;
+}
+
+ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#date {
+    font-weight: bold;
+    color: #667eea;
+}
+
+span#date {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    body {
+        padding: 20px 10px;
+    }
+
+    ol li::before {
+        left: -20px;
+        font-size: 1em;
+    }
+}
